@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.supplychain.ProductController">
+   <children>
+      <TableView fx:id="productTableView" layoutY="52.0" prefHeight="448.0" prefWidth="500.0">
+        <columns>
+          <TableColumn fx:id="productID" prefWidth="110.40002745389938" text="ID" />
+          <TableColumn fx:id="productName" prefWidth="140.79998779296875" text="NAME" />
+            <TableColumn fx:id="productPrice" prefWidth="127.99998474121094" text="PRICE" />
+            <TableColumn fx:id="productAction" prefWidth="124.00006103515625" text="ACTION" />
+        </columns>
+      </TableView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#6dacfa" height="52.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="500.0" />
+      <Label layoutX="8.0" layoutY="17.0" prefHeight="18.0" prefWidth="89.0" text="Search Product:" />
+      <TextField fx:id="keywordTextField" layoutX="98.0" layoutY="13.0" prefHeight="26.0" prefWidth="184.0" promptText="keyword.." />
+      <Button fx:id="loginButton" layoutX="407.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#login" prefHeight="26.0" prefWidth="78.0" text="Login">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="logoutButton" layoutX="320.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#logout" prefHeight="26.0" prefWidth="78.0" text="Logout">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
